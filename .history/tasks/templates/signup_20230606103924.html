@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form method="POST" class="card card-body">
+    <h1>Holis</h1>
+
+    {{error}}
+
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button>
+        Signup
+    </button>
+</forrm>
+{% endblock %}
+
+

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{task.title}}</h1>
+
+    <form method=POST">
+
+        {{form}}
+        <button>
+            Update
+        </button>    
+
+    </form>
+
+{% endblock %}
